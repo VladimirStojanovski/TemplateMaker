@@ -1,0 +1,63 @@
+body {
+    background-color: #7A7A7C;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#title {
+    font-size: 3rem;
+    color: black;
+}
+
+canvas {
+    text-wrap: normal;
+}
+
+.input-group {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#userText {
+    border-radius: 16px 0 0 16px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    flex-grow: 1;
+    height: 40px;
+}
+
+#downloadBtn {
+    height: 40px;
+}
+
+.input-group-append .btn-download {
+    border-radius: 0 16px 16px 0;
+    background-color: #B4B4B4;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.input-group-append .btn-download:hover {
+    background-color: #9E9E9E;
+}
+
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #userText {
+        border-radius: 16px 16px 0 0;
+        margin-bottom: 10px;
+    }
+
+    .input-group-append .btn-download {
+        border-radius: 0 0 16px 16px;
+    }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Maker</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+
+<body>
+<div class="container text-center mt-5">
+    <h1 id="title">Create Your Own Templates</h1>
+
+    <div class="template-container position-relative mx-auto mt-4">
+        <canvas id="templateCanvas" width="480" height="854" aria-label="Template"></canvas>
+
+        <div class="input-group mt-md-3 justify-content-center">
+            <input type="text" id="userText" class="form-control" value="Imagine if there was a page dedicated to ..." placeholder="Enter your text here" aria-label="User input">
+            <div class="input-group-append">
+                <button class="btn btn-download" id="downloadBtn" onclick="downloadImage()" type="button" aria-label="Download button">
+                    Download <span class="material-icons">download</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
