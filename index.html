@@ -18,16 +18,17 @@
     <h1 id="title">Create Your Own Templates</h1>
 
     <div class="template-container position-relative mx-auto mt-4">
-        <canvas id="templateCanvas" width="480" height="854" aria-label="Template"></canvas>
 
         <div class="input-group mt-md-3 justify-content-center">
-            <input type="text" id="userText" class="form-control" value="Imagine if there was a page dedicated to ..." placeholder="Enter your text here" aria-label="User input">
+            <input type="text" id="userText" class="form-control" placeholder="Enter your text here" aria-label="User input">
             <div class="input-group-append">
                 <button class="btn btn-download" id="downloadBtn" onclick="downloadImage()" type="button" aria-label="Download button">
                     Download <span class="material-icons">download</span>
                 </button>
             </div>
         </div>
+
+        <canvas id="templateCanvas" class="mt-4" width="480" height="854" aria-label="Template"></canvas>
 
     </div>
 </div>

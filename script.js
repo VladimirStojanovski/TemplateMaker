@@ -1,4 +1,3 @@
-// Cache DOM elements for better performance
 const canvas = document.getElementById('templateCanvas');
 const ctx = canvas.getContext('2d');
 const userTextInput = document.getElementById('userText');
@@ -16,7 +15,6 @@ const config = {
     startX: canvas.width / 2
 };
 
-// Draw image and text when the image is loaded
 img.onload = () => {
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     drawText();
@@ -27,7 +25,7 @@ function drawText() {
     const words = text.split(' ');
     let line = '';
 
-    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas before drawing
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
     ctx.font = config.textFont;
@@ -52,7 +50,6 @@ function drawText() {
     ctx.fillText(line, config.startX, y);
 }
 
-// Listen to input changes
 userTextInput.addEventListener('input', drawText);
 
 function downloadImage() {

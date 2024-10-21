@@ -5,18 +5,7 @@ body {
 }
 
 #title {
-    font-size: 3rem;
     color: black;
-}
-
-canvas {
-    text-wrap: normal;
-}
-
-.input-group {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
 }
 
 #userText {
@@ -28,10 +17,6 @@ canvas {
     height: 40px;
 }
 
-#downloadBtn {
-    height: 40px;
-}
-
 .input-group-append .btn-download {
     border-radius: 0 16px 16px 0;
     background-color: #B4B4B4;
@@ -40,24 +25,60 @@ canvas {
     padding: 10px 20px;
     display: flex;
     align-items: center;
+    height: 40px;
 }
 
 .input-group-append .btn-download:hover {
     background-color: #9E9E9E;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1100px) {
     .input-group {
-        flex-direction: column;
-        width: 100%;
+        max-width: 600px;
+        display: flex;
+        margin: 0 auto;
     }
 
-    #userText {
-        border-radius: 16px 16px 0 0;
-        margin-bottom: 10px;
+    canvas {
+        width: 380px;
+        height: auto;
     }
 
-    .input-group-append .btn-download {
-        border-radius: 0 0 16px 16px;
+    #title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .input-group {
+        max-width: 560px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    canvas {
+        width: 340px;
+        height: auto;
+    }
+
+    #title {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .input-group {
+        max-width: 380px;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    canvas {
+        width: 240px;
+        height: auto;
+    }
+
+    #title {
+        font-size: 30px;
     }
 }
