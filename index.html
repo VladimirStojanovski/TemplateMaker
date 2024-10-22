@@ -20,10 +20,10 @@
     <div class="template-container position-relative mx-auto mt-4">
 
         <div class="input-group mt-md-3 justify-content-center">
-            <input type="text" id="userText" class="form-control" placeholder="Enter your text here" aria-label="User input">
+            <input type="text" data-bs-toggle="tooltip" title="Enter the text that you wish to add to the template" id="userText" class="form-control" placeholder="Enter your text here" aria-label="User input">
             <div class="input-group-append">
                 <button class="btn btn-download" id="downloadBtn" onclick="downloadImage()" type="button" aria-label="Download button">
-                    Download <span class="material-icons">download</span>
+                    <span class="btn-text">Download</span> <span class="material-icons">download</span>
                 </button>
             </div>
         </div>
