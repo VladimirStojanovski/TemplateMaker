@@ -3,7 +3,7 @@ const ctx = canvas.getContext('2d');
 const userTextInput = document.getElementById('userText');
 
 const img = new Image();
-img.src = 'BlankTemplate.jpg';
+img.src = './assets/BlankTemplate.jpg';
 
 const config = {
     maxWidth: 450,
@@ -53,8 +53,12 @@ function drawText() {
 userTextInput.addEventListener('input', drawText);
 
 function downloadImage() {
-    const link = document.createElement('a');
-    link.download = 'template.jpg';
-    link.href = canvas.toDataURL();
-    link.click();
+    if (userTextInput.value.trim() !== "") {
+        const link = document.createElement('a');
+        link.download = 'template.jpg';
+        link.href = canvas.toDataURL();
+        link.click();
+    } else {
+        alert('Please add text to the template before downloading!');
+    }
 }
